@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=PT+Sans:wght@700&display=swap');
+
+:root{
+    --text: rgb(15, 19, 31);
+    --background: rgb(221, 225, 238);
+    --primary: rgb(155, 169, 207);
+    --secondary: rgb(214, 219, 235);
+    --accent: rgb(80, 102, 165);    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--background);
+    font-family: 'PT Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+}
+
+header{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header > *{
+    margin-bottom: .75em;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+input{
+    border: 0;
+    padding: 1em 1.3em;
+    background: var(--text);
+    width: 500px;
+    max-width: 100%;
+    border-radius: .75em;
+    box-shadow: 0 .3em .65em rgba(10, 10, 10, 0.7);
+    color: #fff;
+    outline: none;
+}
+
+input[type="text"]:focus-visible{
+    outline: var(--secondary);
+}
+
+
+main{
+    margin-top: 3em;
+}
+
+#todo-wrapper{
+    padding: 1em;
+    background: var(--secondary);
+    width: 500px;
+    max-width: 100%;
+}
+
+.list-group-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    padding: .65em;
+    border-bottom: 1px solid var(--background);
+    border-radius: .5em;
+    margin-bottom: .25em;
+}
+
+.list-group-item span{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.delete:hover,
+.delete:focus {
+    scale: 1.2;
+}
+
+.addTodo label{
+    display: block;
+    margin: 1.2em 0;
+    text-align: center;
+}
+
+.hide{
+    display: none;
+}
