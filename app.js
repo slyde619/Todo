@@ -29,7 +29,6 @@ addTodo.addEventListener('submit', e => {
 list.addEventListener('click', e => {
     if(e.target.classList.contains('delete')){
         e.target.parentElement.remove()
-        e.target.parentElement.style['transition'] = ".3s"
     }
 })
 
